@@ -1,0 +1,11 @@
+C:\Users\niata\source\repos\PayBoxForm\PayBoxForm\obj\Debug\PayBoxForm.csprojAssemblyReference.cache
+C:\Users\niata\source\repos\PayBoxForm\PayBoxForm\obj\Debug\PayBoxForm.Properties.Resources.resources
+C:\Users\niata\source\repos\PayBoxForm\PayBoxForm\obj\Debug\PayBoxForm.csproj.GenerateResource.cache
+C:\Users\niata\source\repos\PayBoxForm\PayBoxForm\obj\Debug\PayBoxForm.csproj.CoreCompileInputs.cache
+C:\Users\niata\source\repos\PayBoxForm\PayBoxForm\bin\Debug\PayBoxForm.exe.config
+C:\Users\niata\source\repos\PayBoxForm\PayBoxForm\bin\Debug\PayBoxForm.exe
+C:\Users\niata\source\repos\PayBoxForm\PayBoxForm\bin\Debug\PayBoxForm.pdb
+C:\Users\niata\source\repos\PayBoxForm\PayBoxForm\obj\Debug\PayBoxForm.PayBox.resources
+C:\Users\niata\source\repos\PayBoxForm\PayBoxForm\obj\Debug\PayBoxForm.Payment.resources
+C:\Users\niata\source\repos\PayBoxForm\PayBoxForm\obj\Debug\PayBoxForm.exe
+C:\Users\niata\source\repos\PayBoxForm\PayBoxForm\obj\Debug\PayBoxForm.pdb

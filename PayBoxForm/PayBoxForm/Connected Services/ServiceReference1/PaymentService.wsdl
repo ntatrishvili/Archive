@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CheckDebtResponses">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="tns:CheckDebtRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CheckDebtRequest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="AbonnentCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompanyName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Operation" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HashCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CheckDebtResponsesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckDebtResponsesResult" type="tns:CheckDebtResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CheckDebtResponse">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="RequestID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Error" type="tns:Error" />
+          <s:element minOccurs="0" maxOccurs="1" name="InitialParameters" type="tns:InitialParameters" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Error">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="errorCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="InitialParameters">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Initials" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Debt" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="luka">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="request" type="tns:PaymentRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="PaymentRequest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TransactionID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Amount" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="AbonnentCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompanyName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Operation" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HashCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="lukaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="lukaResult" type="tns:PaymentResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="PaymentResponse">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="RequestID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Error" type="tns:Error" />
+          <s:element minOccurs="1" maxOccurs="1" name="InternalID" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CheckDebtResponsesSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckDebtResponses" />
+  </wsdl:message>
+  <wsdl:message name="CheckDebtResponsesSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckDebtResponsesResponse" />
+  </wsdl:message>
+  <wsdl:message name="lukaSoapIn">
+    <wsdl:part name="parameters" element="tns:luka" />
+  </wsdl:message>
+  <wsdl:message name="lukaSoapOut">
+    <wsdl:part name="parameters" element="tns:lukaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="PaymentServiceSoap">
+    <wsdl:operation name="CheckDebt">
+      <wsdl:input name="CheckDebtResponses" message="tns:CheckDebtResponsesSoapIn" />
+      <wsdl:output name="CheckDebtResponses" message="tns:CheckDebtResponsesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Payment">
+      <wsdl:input name="luka" message="tns:lukaSoapIn" />
+      <wsdl:output name="luka" message="tns:lukaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PaymentServiceSoap" type="tns:PaymentServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckDebt">
+      <soap:operation soapAction="http://tempuri.org/CheckDebtResponses" style="document" />
+      <wsdl:input name="CheckDebtResponses">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="CheckDebtResponses">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Payment">
+      <soap:operation soapAction="http://tempuri.org/luka" style="document" />
+      <wsdl:input name="luka">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="luka">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PaymentServiceSoap12" type="tns:PaymentServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckDebt">
+      <soap12:operation soapAction="http://tempuri.org/CheckDebtResponses" style="document" />
+      <wsdl:input name="CheckDebtResponses">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="CheckDebtResponses">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Payment">
+      <soap12:operation soapAction="http://tempuri.org/luka" style="document" />
+      <wsdl:input name="luka">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="luka">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PaymentService">
+    <wsdl:port name="PaymentServiceSoap" binding="tns:PaymentServiceSoap">
+      <soap:address location="http://localhost:59519/PaymentService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PaymentServiceSoap12" binding="tns:PaymentServiceSoap12">
+      <soap12:address location="http://localhost:59519/PaymentService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
