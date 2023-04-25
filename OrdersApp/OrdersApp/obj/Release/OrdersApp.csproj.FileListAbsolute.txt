@@ -1,0 +1,7 @@
+C:\Users\niata\source\repos\OrdersApp\OrdersApp\bin\Release\OrdersApp.exe.config
+C:\Users\niata\source\repos\OrdersApp\OrdersApp\bin\Release\OrdersApp.exe
+C:\Users\niata\source\repos\OrdersApp\OrdersApp\bin\Release\OrdersApp.pdb
+C:\Users\niata\source\repos\OrdersApp\OrdersApp\obj\Release\OrdersApp.csprojAssemblyReference.cache
+C:\Users\niata\source\repos\OrdersApp\OrdersApp\obj\Release\OrdersApp.csproj.CoreCompileInputs.cache
+C:\Users\niata\source\repos\OrdersApp\OrdersApp\obj\Release\OrdersApp.exe
+C:\Users\niata\source\repos\OrdersApp\OrdersApp\obj\Release\OrdersApp.pdb
