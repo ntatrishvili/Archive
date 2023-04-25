@@ -1,0 +1,2 @@
+C:\Users\niata\source\repos\WcfServiceCESKO\CESKOApp\obj\Debug\CESKOApp.csprojAssemblyReference.cache
+C:\Users\niata\source\repos\WcfServiceCESKO\CESKOApp\obj\Debug\CESKOApp.csproj.CoreCompileInputs.cache

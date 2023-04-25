@@ -1,0 +1,7 @@
+C:\Users\niata\source\repos\WcfServiceCESKO\WcfServiceCESKO\bin\WcfServiceCESKO.dll.config
+C:\Users\niata\source\repos\WcfServiceCESKO\WcfServiceCESKO\bin\WcfServiceCESKO.dll
+C:\Users\niata\source\repos\WcfServiceCESKO\WcfServiceCESKO\bin\WcfServiceCESKO.pdb
+C:\Users\niata\source\repos\WcfServiceCESKO\WcfServiceCESKO\obj\Debug\WcfServiceCESKO.csprojAssemblyReference.cache
+C:\Users\niata\source\repos\WcfServiceCESKO\WcfServiceCESKO\obj\Debug\WcfServiceCESKO.csproj.CoreCompileInputs.cache
+C:\Users\niata\source\repos\WcfServiceCESKO\WcfServiceCESKO\obj\Debug\WcfServiceCESKO.dll
+C:\Users\niata\source\repos\WcfServiceCESKO\WcfServiceCESKO\obj\Debug\WcfServiceCESKO.pdb

@@ -1,0 +1,11 @@
+C:\Users\niata\source\repos\WcfServiceCESKO\hosing\bin\Debug\hosing.exe.config
+C:\Users\niata\source\repos\WcfServiceCESKO\hosing\bin\Debug\hosing.exe
+C:\Users\niata\source\repos\WcfServiceCESKO\hosing\bin\Debug\hosing.pdb
+C:\Users\niata\source\repos\WcfServiceCESKO\hosing\bin\Debug\WcfServiceCESKO.dll
+C:\Users\niata\source\repos\WcfServiceCESKO\hosing\bin\Debug\WcfServiceCESKO.pdb
+C:\Users\niata\source\repos\WcfServiceCESKO\hosing\bin\Debug\WcfServiceCESKO.dll.config
+C:\Users\niata\source\repos\WcfServiceCESKO\hosing\obj\Debug\hosing.csprojAssemblyReference.cache
+C:\Users\niata\source\repos\WcfServiceCESKO\hosing\obj\Debug\hosing.csproj.CoreCompileInputs.cache
+C:\Users\niata\source\repos\WcfServiceCESKO\hosing\obj\Debug\hosing.csproj.CopyComplete
+C:\Users\niata\source\repos\WcfServiceCESKO\hosing\obj\Debug\hosing.exe
+C:\Users\niata\source\repos\WcfServiceCESKO\hosing\obj\Debug\hosing.pdb
