@@ -1,0 +1,10 @@
+C:\Users\niata\source\repos\Rates\Rates\bin\Debug\Rates.exe.config
+C:\Users\niata\source\repos\Rates\Rates\bin\Debug\Rates.exe
+C:\Users\niata\source\repos\Rates\Rates\bin\Debug\Rates.pdb
+C:\Users\niata\source\repos\Rates\Rates\obj\Debug\Rates.csprojAssemblyReference.cache
+C:\Users\niata\source\repos\Rates\Rates\obj\Debug\Rates.Form1.resources
+C:\Users\niata\source\repos\Rates\Rates\obj\Debug\Rates.Properties.Resources.resources
+C:\Users\niata\source\repos\Rates\Rates\obj\Debug\Rates.csproj.GenerateResource.cache
+C:\Users\niata\source\repos\Rates\Rates\obj\Debug\Rates.csproj.CoreCompileInputs.cache
+C:\Users\niata\source\repos\Rates\Rates\obj\Debug\Rates.exe
+C:\Users\niata\source\repos\Rates\Rates\obj\Debug\Rates.pdb

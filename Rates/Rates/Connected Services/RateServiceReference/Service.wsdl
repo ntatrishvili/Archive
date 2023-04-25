@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.nbg.ge/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.nbg.ge/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.nbg.ge/">
+      <s:element name="GetCurrentRates">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Currencies" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCurrentRatesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCurrentRatesResult" type="tns:ArrayOfCurrencyRate" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCurrencyRate">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CurrencyRate" nillable="true" type="tns:CurrencyRate" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CurrencyRate">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Code" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Quantity" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Rate" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Diff" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Date" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ValidFromDate" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetLastRates">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Currencies" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLastRatesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLastRatesResult" type="tns:ArrayOfCurrencyRate" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetCurrentRatesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCurrentRates" />
+  </wsdl:message>
+  <wsdl:message name="GetCurrentRatesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCurrentRatesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLastRatesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLastRates" />
+  </wsdl:message>
+  <wsdl:message name="GetLastRatesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLastRatesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="GetCurrentRates">
+      <wsdl:input message="tns:GetCurrentRatesSoapIn" />
+      <wsdl:output message="tns:GetCurrentRatesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastRates">
+      <wsdl:input message="tns:GetLastRatesSoapIn" />
+      <wsdl:output message="tns:GetLastRatesSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCurrentRates">
+      <soap:operation soapAction="http://www.nbg.ge/GetCurrentRates" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastRates">
+      <soap:operation soapAction="http://www.nbg.ge/GetLastRates" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCurrentRates">
+      <soap12:operation soapAction="http://www.nbg.ge/GetCurrentRates" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastRates">
+      <soap12:operation soapAction="http://www.nbg.ge/GetLastRates" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="https://services.nbg.gov.ge/Rates/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="https://services.nbg.gov.ge/Rates/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
