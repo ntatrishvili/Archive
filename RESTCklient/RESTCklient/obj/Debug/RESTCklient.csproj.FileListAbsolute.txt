@@ -1,0 +1,13 @@
+C:\Users\niata\source\repos\RESTCklient\RESTCklient\bin\Debug\RESTCklient.exe.config
+C:\Users\niata\source\repos\RESTCklient\RESTCklient\bin\Debug\RESTCklient.exe
+C:\Users\niata\source\repos\RESTCklient\RESTCklient\bin\Debug\RESTCklient.pdb
+C:\Users\niata\source\repos\RESTCklient\RESTCklient\obj\Debug\RESTCklient.csprojAssemblyReference.cache
+C:\Users\niata\source\repos\RESTCklient\RESTCklient\obj\Debug\RESTCklient.Form1.resources
+C:\Users\niata\source\repos\RESTCklient\RESTCklient\obj\Debug\RESTCklient.Properties.Resources.resources
+C:\Users\niata\source\repos\RESTCklient\RESTCklient\obj\Debug\RESTCklient.csproj.GenerateResource.cache
+C:\Users\niata\source\repos\RESTCklient\RESTCklient\obj\Debug\RESTCklient.csproj.CoreCompileInputs.cache
+C:\Users\niata\source\repos\RESTCklient\RESTCklient\obj\Debug\RESTCklient.exe
+C:\Users\niata\source\repos\RESTCklient\RESTCklient\obj\Debug\RESTCklient.pdb
+C:\Users\niata\source\repos\RESTCklient\RESTCklient\bin\Debug\Newtonsoft.Json.dll
+C:\Users\niata\source\repos\RESTCklient\RESTCklient\bin\Debug\Newtonsoft.Json.xml
+C:\Users\niata\source\repos\RESTCklient\RESTCklient\obj\Debug\RESTCklient.csproj.CopyComplete
