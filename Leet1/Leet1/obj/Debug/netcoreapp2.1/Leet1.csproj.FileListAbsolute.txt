@@ -1,0 +1,11 @@
+C:\Users\niata\source\repos\Leet1\Leet1\obj\Debug\netcoreapp2.1\Leet1.csprojAssemblyReference.cache
+C:\Users\niata\source\repos\Leet1\Leet1\obj\Debug\netcoreapp2.1\Leet1.csproj.CoreCompileInputs.cache
+C:\Users\niata\source\repos\Leet1\Leet1\obj\Debug\netcoreapp2.1\Leet1.AssemblyInfoInputs.cache
+C:\Users\niata\source\repos\Leet1\Leet1\obj\Debug\netcoreapp2.1\Leet1.AssemblyInfo.cs
+C:\Users\niata\source\repos\Leet1\Leet1\bin\Debug\netcoreapp2.1\Leet1.deps.json
+C:\Users\niata\source\repos\Leet1\Leet1\bin\Debug\netcoreapp2.1\Leet1.runtimeconfig.json
+C:\Users\niata\source\repos\Leet1\Leet1\bin\Debug\netcoreapp2.1\Leet1.runtimeconfig.dev.json
+C:\Users\niata\source\repos\Leet1\Leet1\bin\Debug\netcoreapp2.1\Leet1.dll
+C:\Users\niata\source\repos\Leet1\Leet1\bin\Debug\netcoreapp2.1\Leet1.pdb
+C:\Users\niata\source\repos\Leet1\Leet1\obj\Debug\netcoreapp2.1\Leet1.dll
+C:\Users\niata\source\repos\Leet1\Leet1\obj\Debug\netcoreapp2.1\Leet1.pdb
