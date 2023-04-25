@@ -1,0 +1,11 @@
+C:\Users\niata\source\repos\Communicating\Communicating\obj\Debug\Communicating.csprojAssemblyReference.cache
+C:\Users\niata\source\repos\Communicating\Communicating\obj\Debug\Communicating.Form1.resources
+C:\Users\niata\source\repos\Communicating\Communicating\obj\Debug\Communicating.Form2.resources
+C:\Users\niata\source\repos\Communicating\Communicating\obj\Debug\Communicating.Properties.Resources.resources
+C:\Users\niata\source\repos\Communicating\Communicating\obj\Debug\Communicating.csproj.GenerateResource.cache
+C:\Users\niata\source\repos\Communicating\Communicating\obj\Debug\Communicating.csproj.CoreCompileInputs.cache
+C:\Users\niata\source\repos\Communicating\Communicating\bin\Debug\Communicating.exe.config
+C:\Users\niata\source\repos\Communicating\Communicating\bin\Debug\Communicating.exe
+C:\Users\niata\source\repos\Communicating\Communicating\bin\Debug\Communicating.pdb
+C:\Users\niata\source\repos\Communicating\Communicating\obj\Debug\Communicating.exe
+C:\Users\niata\source\repos\Communicating\Communicating\obj\Debug\Communicating.pdb

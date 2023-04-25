@@ -1,0 +1,13 @@
+C:\Users\niata\source\repos\CESKOApp\CESKOApp\bin\Debug\CESKOApp.exe.config
+C:\Users\niata\source\repos\CESKOApp\CESKOApp\bin\Debug\CESKOApp.exe
+C:\Users\niata\source\repos\CESKOApp\CESKOApp\bin\Debug\CESKOApp.pdb
+C:\Users\niata\source\repos\CESKOApp\CESKOApp\obj\Debug\CESKOApp.csprojAssemblyReference.cache
+C:\Users\niata\source\repos\CESKOApp\CESKOApp\obj\Debug\CESKOApp.AddClient.resources
+C:\Users\niata\source\repos\CESKOApp\CESKOApp\obj\Debug\CESKOApp.FormCESKO.resources
+C:\Users\niata\source\repos\CESKOApp\CESKOApp\obj\Debug\CESKOApp.Properties.Resources.resources
+C:\Users\niata\source\repos\CESKOApp\CESKOApp\obj\Debug\CESKOApp.UpdateClient.resources
+C:\Users\niata\source\repos\CESKOApp\CESKOApp\obj\Debug\CESKOApp.csproj.GenerateResource.cache
+C:\Users\niata\source\repos\CESKOApp\CESKOApp\obj\Debug\CESKOApp.csproj.CoreCompileInputs.cache
+C:\Users\niata\source\repos\CESKOApp\CESKOApp\obj\Debug\CESKOApp.exe
+C:\Users\niata\source\repos\CESKOApp\CESKOApp\obj\Debug\CESKOApp.pdb
+C:\Users\niata\source\repos\CESKOApp\CESKOApp\obj\Debug\CESKOApp.DeleteClient.resources
